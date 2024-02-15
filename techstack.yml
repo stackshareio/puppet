@@ -1,12 +1,12 @@
 repo_name: stackshareio/puppet
-report_id: b62d85ad676d34131dd785876c279171
+report_id: 8c5b2e62ad71015ae0487131b9faaf54
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-09T00:05:43+00:00'
+timestamp: '2024-02-15T18:32:17+00:00'
 requested_by: puppetlabs-jenkins
 provider: github
 branch: main
-detected_tools_count: 33
+detected_tools_count: 30
 tools:
 - name: C#
   description: Simple, general-purpose, object-oriented programming language for the
@@ -17,16 +17,6 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
-  detection_source_url: https://github.com/stackshareio/puppet
-  detection_source: Repo Metadata
-- name: Pascal
-  description: An imperative and procedural programming language
-  website_url: https://en.wikipedia.org/wiki/Pascal_(programming_language)
-  open_source: true
-  hosted_saas: false
-  category: Languages & Frameworks
-  sub_category: Languages
-  image_url: https://img.stackshare.io/service/25462/default_b93b3ffaf8650f0584d7b2e14dd145f599722cae.png
   detection_source_url: https://github.com/stackshareio/puppet
   detection_source: Repo Metadata
 - name: Ruby
@@ -52,6 +42,17 @@ tools:
   detection_source: ext/dbfix.sql
   last_updated_by: James Turnbull
   last_updated_on: 2009-02-27 23:30:23.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/stackshareio/puppet
+  detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -74,6 +75,20 @@ tools:
   detection_source: ".github/workflows/checks.yaml"
   last_updated_by: gimmy
   last_updated_on: 2020-10-01 12:21:26.000000000 Z
+- name: Istio
+  description: Open platform to connect, manage, and secure microservices, by Google,
+    IBM, and Lyft
+  website_url: https://istio.io/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Microservices Tools
+  image_url: https://img.stackshare.io/service/7028/AGpa5VZV.jpg
+  detection_source_url: https://github.com/stackshareio/puppet/blob/main/ext/build_defaults.yaml
+  detection_source: ext/build_defaults.yaml
+  last_updated_by: Moses Mendoza
+  last_updated_on: 2012-08-24 22:52:14.000000000 Z
 - name: Puppet Labs
   description: Server automation framework and application
   website_url: http://puppetlabs.com/
@@ -123,21 +138,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
-  detection_source_url: https://github.com/stackshareio/puppet/blob/main/benchmarks/full_catalog/Gemfile
-  detection_source: benchmarks/full_catalog/Gemfile
-  last_updated_by: Patrick Carlisle
-  last_updated_on: 2018-01-31 00:42:04.000000000 Z
-- name: Shell
-  description: A shell is a text-based terminal, used for manipulating programs and
-    files. Shell scripts typically manage program execution.
-  website_url: https://en.wikipedia.org/wiki/Shell_script
-  open_source: false
-  hosted_saas: false
-  category: Languages & Frameworks
-  sub_category: Languages
-  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
-  detection_source_url: https://github.com/stackshareio/puppet
-  detection_source: Repo Metadata
+  detection_source_url: https://github.com/stackshareio/puppet/blob/main/acceptance/Gemfile
+  detection_source: acceptance/Gemfile
+  last_updated_by: Andrew Parker
+  last_updated_on: 2013-06-14 21:37:50.000000000 Z
 - name: diff-lcs
   description: Diff::LCS computes the difference between two Enumerable sequences
     using the McIlroy-Hunt longest common subsequence
@@ -166,20 +170,6 @@ tools:
   detection_source: Gemfile
   last_updated_by: Jeff McCune
   last_updated_on: 2012-08-20 22:24:44.000000000 Z
-- name: gettext-setup
-  description: A gem to ease i18n
-  package_url: https://rubygems.org/gettext-setup
-  version: '0.28'
-  license: Apache-2.0
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: RubyGems Packages
-  image_url: https://img.stackshare.io/package/rubygems/image.png
-  detection_source_url: https://github.com/stackshareio/puppet/blob/main/Gemfile
-  detection_source: Gemfile
-  last_updated_by: Josh Cooper
-  last_updated_on: 2018-08-11 07:45:53.000000000 Z
 - name: httparty
   description: Makes http fun! Also
   package_url: https://rubygems.org/httparty
@@ -276,21 +266,6 @@ tools:
   detection_source: Gemfile
   last_updated_by: Jeff McCune
   last_updated_on: 2012-08-20 22:24:44.000000000 Z
-- name: r10k
-  description: R10K provides a general purpose toolset for deploying Puppet environments
-    and modules
-  package_url: https://rubygems.org/r10k
-  version: '2.6'
-  license: Apache-2.0
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: RubyGems Packages
-  image_url: https://img.stackshare.io/package/rubygems/image.png
-  detection_source_url: https://github.com/stackshareio/puppet/blob/main/benchmarks/full_catalog/Gemfile
-  detection_source: benchmarks/full_catalog/Gemfile
-  last_updated_by: Patrick Carlisle
-  last_updated_on: 2018-01-31 00:42:04.000000000 Z
 - name: racc
   description: Racc is a LALR
   package_url: https://rubygems.org/racc
@@ -368,21 +343,6 @@ tools:
   detection_source: Gemfile
   last_updated_by: Josh Cooper
   last_updated_on: 2020-10-23 20:58:48.000000000 Z
-- name: rubocop-i18n
-  description: RuboCop rules for detecting and autocorrecting undecorated strings
-    for i18n
-  package_url: https://rubygems.org/rubocop-i18n
-  version: 1.2.0
-  license: Apache-2.0
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: RubyGems Packages
-  image_url: https://img.stackshare.io/package/rubygems/image.png
-  detection_source_url: https://github.com/stackshareio/puppet/blob/main/Gemfile
-  detection_source: Gemfile
-  last_updated_by: Josh Cooper
-  last_updated_on: 2018-08-11 07:45:53.000000000 Z
 - name: ruby-prof
   description: Ruby-prof is a fast code profiler for Ruby
   package_url: https://rubygems.org/ruby-prof
