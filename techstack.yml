@@ -2,7 +2,7 @@ repo_name: stackshareio/puppet
 report_id: 7f46537ede45931de9a45b5c020dcd77
 version: 0.1
 repo_type: Public
-timestamp: '2024-03-01T20:37:02+00:00'
+timestamp: '2024-03-01T20:37:09+00:00'
 requested_by: puppetlabs-jenkins
 provider: github
 branch: main
